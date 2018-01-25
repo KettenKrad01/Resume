@@ -19,5 +19,8 @@
         width: 1124px;
         margin: 50px auto;
         background: #fff;
+        /deep/ .el-card__body{
+            padding: 0;
+        }
     }
 </style>
