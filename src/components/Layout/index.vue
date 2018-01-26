@@ -10,16 +10,16 @@
     export default {
         data() {
             return {};
-        }
+        },
     };
 </script>
 
 <style lang="less" scoped>
-    .rm-layout{
+    .rm-layout {
         width: 1124px;
         margin: 50px auto;
         background: #fff;
-        /deep/ .el-card__body{
+        /deep/ .el-card__body {
             padding: 0;
         }
     }

@@ -11,10 +11,25 @@
             <p>本科 / 2017年毕业</p>
         </div>
         <div class="right-skill">
-            <p>技术栈</p>
+            <p style="text-align: left">技术栈</p>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+            <a>React</a>
+
         </div>
         <div class="right-link">
-            <p><img src="~assets/github.png" alt=""><a>github</a></p>
+            <p><img src="~assets/github.png" alt=""><a>GitHub</a></p>
             <p><img src="~assets/zhihu.png" alt=""><a>知乎</a></p>
             <p><img src="~assets/email.png" alt=""><a>邮箱</a></p>
             <p><img src="~assets/phone.png" alt=""><a>电话</a></p>
@@ -59,10 +74,42 @@
             }
         }
         .right-info {
-            margin: 60px 0;
+            margin-top: 60px;
+            margin-bottom: 80px;
         }
         .right-skill {
-            height: 330px;
+            height: 255px;
+            text-align: center;
+            a{
+                text-decoration: none;
+                border-bottom: 1px solid #999;
+                word-wrap: break-word;
+                display: inline-block;
+                margin: 8px;
+                font-size: 12px;
+                color: #9d9d9d;
+                cursor: pointer;
+            }
+            a:active, a:hover {
+                outline: 0;
+                border-bottom-color: #222;
+            }
+            a:nth-child(3){
+                font-size: 16.5px;
+                color: #9d9d9d;
+            }
+            a:nth-child(4){
+                font-size: 21px;
+                color: #6f6f6f;
+            }
+            a:nth-child(7){
+                font-size: 25.5px;
+                color: #404040;
+            }
+            a:nth-child(11){
+                font-size: 30px;
+                color: #111;
+            }
         }
         .right-link {
             p {
