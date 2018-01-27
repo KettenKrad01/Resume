@@ -58,6 +58,27 @@ const skillList = [
     'react',
     'react',
 ];
+const social = [{
+    id: 0,
+    name: 'GitHub',
+    url: '//baidu.com',
+    icon: '/github.png',
+}, {
+    id: 1,
+    name: '知乎',
+    url: '//baidu.com',
+    icon: '/zhihu.png',
+}, {
+    id: 2,
+    name: '邮箱',
+    url: '//baidu.com',
+    icon: '/email.png',
+}, {
+    id: 3,
+    name: '电话',
+    url: '//baidu.com',
+    icon: '/phone.png',
+}];
 
 const personalInfo = {
     name: '卢本伟',
@@ -67,10 +88,11 @@ const personalInfo = {
     university: '野鸡大学',
     major: '电竞科学研究专业',
     education: '本科',
-    graduation: '2017年'
+    graduation: '2017年',
+    social,
+    skillList,
 };
 export default {
-    skillList,
     traitList,
     projectList,
     personalInfo,

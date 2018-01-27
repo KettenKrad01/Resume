@@ -34,6 +34,7 @@
         .rm-main-right {
             flex: 0.35;
             padding: 30px 35px;
+            padding-bottom: 0;
             overflow: hidden;
             background: #eeeeee;
         }
