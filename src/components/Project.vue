@@ -13,7 +13,7 @@
             return {};
         },
         beforeMount() {
-            axios('static/md/React.md').then(res => {
+            axios('static/md/yh.md').then(res => {
                 let html = new MarkdownIt().render(res.data);
                 console.log(this.$refs.md.innerHTML);
                 this.$refs.md.innerHTML = html;

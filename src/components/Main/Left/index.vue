@@ -20,7 +20,7 @@
                         </div>
                         <el-button>连接</el-button>
                     </left-confirm>
-                    <el-button @click="$router.push(detail)">详情</el-button>
+                    <el-button @click="$router.push('/project'+detail)">详情</el-button>
                 </div>
             </div>
             <p>{{dec}}</p>

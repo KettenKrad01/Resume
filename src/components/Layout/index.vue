@@ -31,7 +31,7 @@
 
         .lastUpdate {
             position: absolute;
-            right: 0;
+            right: 2px;
             top: -20px;
             font-size: 12px;
         }

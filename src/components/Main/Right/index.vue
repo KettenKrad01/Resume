@@ -1,7 +1,7 @@
 <template>
     <div class="right">
         <div class="right-top">
-            <div class="right-top__avatar"></div>
+            <img :src="'./static/images/avatar.png'" class="right-top__avatar" />
             <h1>{{personalInfo.name}}</h1>
             <h3>{{personalInfo.position}}</h3>
         </div>
@@ -9,14 +9,17 @@
             <p>{{personalInfo.sex}} / {{personalInfo.birthday}}</p>
             <p>{{personalInfo.university}} • {{personalInfo.major}}</p>
             <p>{{personalInfo.education}} / {{personalInfo.graduation}}毕业</p>
+            <p>英语 / {{personalInfo.english}}毕业</p>
         </div>
         <div class="right-skill">
-            <p style="text-align: left">技术栈</p>
+            <p>技术栈</p>
             <a v-for="(item, index) in personalInfo.skillList" :key="index">{{item}}</a>
         </div>
         <div class="right-link">
-            <p v-for="{id, name, url, icon} in personalInfo.social" :key="id">
-                <img :src="'./static/images'+icon" alt=""><a :href="url">{{name}}</a>
+            <p v-for="{id, name, url, icon, text} in personalInfo.social" :key="id">
+                <img :src="'./static/images'+icon" alt="">
+                <a v-if="url" :href="url">{{name}}</a>
+                <a v-else>{{text}}</a>
             </p>
             <!--<p><img src="~assets/zhihu.png" alt=""><a>知乎</a></p>-->
             <!--<p><img src="~assets/email.png" alt=""><a>邮箱</a></p>-->
